@@ -1,6 +1,6 @@
 # hERG Performance Analysis
 
-Explore the hERG models in the Ersilia model hub performance through a comprehensive analysis using an unbiased dataset.
+Explore the hERG models in the Ersilia Model Hub performance through a comprehensive analysis using an unbiased dataset. The test dataset has been obtained from the [NCATS repository](https://github.com/ncats/herg-ml/tree/master/data/train_valid). Molecules in the test set that existed in the training sets of the available models have been removed.
 
 ## Data folder
 
