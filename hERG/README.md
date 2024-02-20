@@ -56,6 +56,6 @@ The test dataset was obtained from the [NCATS repository](https://github.com/nca
 - File: `01_model_evaluations.ipynb`
 - Description: Assess individual model performance. This notebook provides accuracy, precision, recall, and F1 score, along with an AUROC curve for each model.model performances are compared through scatter plots. This notebook also generates a correlation matrix for a deeper understanding.
 
-### 3. Scatter Plots and Correlation
+### 3. Model Reproducibility
 - File: `03_model_reproducibility.ipynb`
 - Description: In this notebook, reproducibility experiments are carried out on the hERG models. one specific example from the original publications is reproduced per each model.
