@@ -41,20 +41,21 @@ The test dataset was obtained from the [NCATS repository](https://github.com/nca
 
 - **Unbiased Test Dataset:** Access the unbiased dataset with a 10 μM cut-off in the 'data' folder, named `test_dataset.csv`.
 
+- **model_reproducibility folder:**
+      - **model_datasets:** This contains test/validation datasets from the original publication used to test for model reproducibility. eos2ta5_Test-set-I.csv found in the original source code [here](https://github.com/Abdulk084/CardioTox/blob/master/data/external_test_set_pos.csv) is utilized for eos2ta5. [eos4tcc_EX1.csv](https://github.com/GIST-CSBL/BayeshERG/blob/main/data/External/EX1.csv) is the external dataset used to test for the model reproducibility. eos30gr_TableS4.xlsx is the TableS4 file sourced from the supporting information of the publication of eos30gr and eos30gr_validation_set.csv is the validation sheet extracted from it. 
+      - **predictions_data:** Predictions are ran on the files in the model_reproducibility/model_datasets and stored here in model_reproducibility/predictions_data in files named reproducibility_predictions_eos2ta5.csv, reproducibility_predictions_eos4tcc.csv qnd reproducibility_predictions_eos30gr.csv
+
+
 ## Notebooks folder
 
-### 1. Comparing Datasets
-- File: `compare_datasets.ipynb`
-- Description: This notebook calculates and prints the overlap percentage of Ersilia hERG model datasets.
+### 1. Data processing
+- File: `00_data_processing.ipynb`
+- Description: In this notebook we compare model training datasets, get the ratio of activity in each dataset, build the test dataset and perform a PCA analysis between the testing and training data.
 
-### 2. Comparing EOS and Test Data
-- File: `compare_eos_and_test.ipynb`
-- Description: This notebook compares the unbiased dataset with Ersilia hERG training datasets.
+### 2. Model Evaluation
+- File: `01_model_evaluations.ipynb`
+- Description: Assess individual model performance. This notebook provides accuracy, precision, recall, and F1 score, along with an AUROC curve for each model.model performances are compared through scatter plots. This notebook also generates a correlation matrix for a deeper understanding.
 
-### 3. Model Evaluation
-- File: `evaluate_model.ipynb`
-- Description: Assess individual model performance. This notebook provides accuracy, precision, recall, and F1 score, along with an AUROC curve.
-
-### 4. Scatter Plots and Correlation
-- File: `scatter_plots.ipynb`
-- Description: Explore the relationships between model performances through scatter plots. This notebook also generates a correlation matrix for a deeper understanding.
+### 3. Scatter Plots and Correlation
+- File: `03_model_reproducibility.ipynb`
+- Description: In this notebook, reproducibility experiments are carried out on the hERG models. one specific example from the original publications is reproduced per each model.
