@@ -1,4 +1,4 @@
-smiles,inchikey,activity
+SMICOL,InChIKey,ACTCOL
 COc1cc(-c2cn([C@H]3C[C@@H](c4ccccc4)CCN(CC(F)(F)F)C3=O)nn2)ccc1-n1cnc(C)c1,WKUIEMLPYVVIBQ-RDPSFJRHSA-N,1
 COc1cc(-c2cn([C@H]3C[C@@H](C(F)(F)F)CN(CC(F)(F)F)C3=O)nn2)ccc1-n1cnc(C)c1,GETQQHOXYHVVJK-PBHICJAKSA-N,0
 COc1cc(-c2cn([C@H]3C[C@@H](C(C)(C)C)CCN(CC45CC6CC(CC(C6)C4)C5)C3=O)nn2)ccc1-n1cnc(C)c1,DHUDBVNXSIDYGA-YDWWKJQGSA-N,1
