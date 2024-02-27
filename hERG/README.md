@@ -59,3 +59,49 @@ The test dataset was obtained from the [NCATS repository](https://github.com/nca
 ### 3. Model Reproducibility
 - File: `03_model_reproducibility.ipynb`
 - Description: In this notebook, reproducibility experiments are carried out on the hERG models. one specific example from the original publications is reproduced per each model.
+
+#### eos2ta5
+ To perform validation for eos2ta5,in page 7 of the original [publication](file:///C:/Users/ENVY%20X360/Downloads/s13321-021-00541-z%20(3).pdf) the authours tested [Test-set-I.csv](https://github.com/Abdulk084/CardioTox/blob/master/data/external_test_set_pos.csv) on their model and got the following results. 
+<img src="../figures/eos2ta5.png" alt="eos2ta5_publication_result">
+When testing eos2ta5 hosted in the hub against that dataset, we got identical results. 
+```
+MCC: 0.5993902797701955
+NPV: 0.6875
+ACC: 0.8181818181818182
+PPV: 0.8928571428571429
+SPE: 0.7857142857142857
+SEN: 0.8333333333333334
+B-ACC: 0.8095238095238095
+```
+This model has successfully been reproduced.
+
+#### eos4tcc
+The authors tested BayeshERG with the [dataset](https://github.com/GIST-CSBL/BayeshERG/blob/main/data/External/EX1.csv) against other DL models and got the following results.
+<img src="../figures/eos4tcc.png" alt="eos4tcc_publication_result">
+<img src="../figures/eos4tcc2.png" alt="eos4tcc_publication_result">
+
+Testing eos4tcc with the same dataset gave the following results.
+```
+SEN: 0.8333333333333334
+SPE: 0.7857142857142857
+MCC: 0.5993902797701955
+B-ACC: 0.8095238095238095
+F1: 0.8620689655172413
+```
+
+#### eos30gr
+eos30gr was retrained inhouse with a threshold value of 10μM. The author tested the models with different threshold values with the following [validation set](https://github.com/leilayesufu/model-validations/blob/main/hERG/data/model_reproducibility/model_datasets/eos30gr_validation_set.csv) and got the following results using the threshold of 10μM. 
+
+<img src="../figures/eos30gr.png" alt="eos30gr_publication_result">
+
+Testing with the eos30gr, the following results were gotten
+```
+Sensitivity (SE): 0.9977011494252873
+Specificity (SP): 0.7857142857142857
+Positive Predictive Value (Q+): 1.0
+Negative Predictive Value (Q-): 0.6875
+Overall Accuracy (Q): 0.9987325728770595
+Area Under the Curve (AUC): 1.0
+```
+
+#### eos30f3
