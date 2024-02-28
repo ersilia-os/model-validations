@@ -62,7 +62,7 @@ The test dataset was obtained from the [NCATS repository](https://github.com/nca
 
 #### eos2ta5
  To perform validation for eos2ta5,in page 7 of the original [publication](file:///C:/Users/ENVY%20X360/Downloads/s13321-021-00541-z%20(3).pdf) the authours tested [Test-set-I.csv](https://github.com/Abdulk084/CardioTox/blob/master/data/external_test_set_pos.csv) on their model and got the following results. 
-<img src="../figures/eos2ta5.png" alt="eos2ta5_publication_result">
+<img src="figures/eos2ta5.png" alt="eos2ta5_publication_result">
 When testing eos2ta5 hosted in the hub against that dataset, we got identical results. 
 ```
 MCC: 0.5993902797701955
@@ -77,8 +77,8 @@ This model has successfully been reproduced.
 
 #### eos4tcc
 The authors tested BayeshERG with the [dataset](https://github.com/GIST-CSBL/BayeshERG/blob/main/data/External/EX1.csv) against other DL models and got the following results.
-<img src="../figures/eos4tcc.png" alt="eos4tcc_publication_result">
-<img src="../figures/eos4tcc2.png" alt="eos4tcc_publication_result">
+<img src="figures/eos4tcc.png" alt="eos4tcc_publication_result">
+<img src="figures/eos4tcc2.png" alt="eos4tcc_publication_result">
 
 Testing eos4tcc with the same dataset gave the following results.
 ```
@@ -92,7 +92,7 @@ F1: 0.8620689655172413
 #### eos30gr
 eos30gr was retrained inhouse with a threshold value of 10μM. The author tested the models with different threshold values with the following [validation set](https://github.com/leilayesufu/model-validations/blob/main/hERG/data/model_reproducibility/model_datasets/eos30gr_validation_set.csv) and got the following results using the threshold of 10μM. 
 
-<img src="../figures/eos30gr.png" alt="eos30gr_publication_result">
+<img src="figures/eos30gr.png" alt="eos30gr_publication_result">
 
 Testing with the eos30gr, the following results were gotten
 ```
