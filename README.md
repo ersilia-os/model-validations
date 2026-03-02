@@ -1,4 +1,4 @@
-# model-validations
+# Model validations
 This repository contains model validations for the Ersilia Model Hub.
 
 ## Repository structure
